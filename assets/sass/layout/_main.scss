@@ -1,0 +1,35 @@
+.gallery{
+   border: 1px solid $sable;
+   height: auto;
+   padding: 2rem 1.5rem;
+   &__item{
+      font-family: $ubuntu;
+      border: 1px dotted $sable;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      &--image{
+         display: block;
+         margin: 0 auto;
+         width: 100%;
+         height: auto;
+      }
+   }
+}
+
+.courses{
+   border: 1px solid $sable;
+   height: auto;
+   padding: 2rem 1.5rem;
+   margin-top: 2rem;
+   &__item{
+      text-align: center;
+      &--image{
+         border-radius: 50%;
+         border: 1px solid $sable;
+         display: block;
+         margin: 0 auto;
+         width: 18rem;
+         height: auto;
+      }
+   }
+}

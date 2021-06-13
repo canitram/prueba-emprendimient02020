@@ -1,0 +1,21 @@
+.header__bg{
+   width: 100%;
+   height: auto;
+   max-height: 20rem;
+}
+
+@media (min-width: $portable ){
+   .header__bg{
+      display: block;
+      margin: 0 auto;
+      
+   }
+}
+
+@media (min-width: $desktop ){
+   .header__bg{
+      display: block;
+      margin: 0 auto;
+   }
+}
+
