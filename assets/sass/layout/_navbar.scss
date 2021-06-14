@@ -55,7 +55,7 @@
       } 
    }
 
-@media (min-width: $pocket) {
+@media (min-width: $portable) {
    .navbar{
       &__logo img{
       padding: 0.5rem;
@@ -68,5 +68,11 @@
       .toggle-collapse{
       display: none;   
       }
+   }
+}
+@media (min-width: $desktop){
+   .navbar__menu{
+      display: flex;
+      color: $white;
    }
 }

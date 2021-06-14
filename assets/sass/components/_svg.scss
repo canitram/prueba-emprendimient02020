@@ -1,0 +1,37 @@
+   .animation__svg{
+      width: 80%;
+      margin: auto;
+      display: block;
+      position: relative;
+
+      .gear{
+         animation: 3s rotate linear infinite;
+         transform-origin: 79% 80%;
+         position: relative;
+      }
+      @keyframes rotate{
+         from{
+            transform: rotate(0deg);
+         }
+         to{
+            transform: rotate(360deg);
+         }
+      }
+
+      .code{
+         animation: 1.5s move linear infinite alternate;
+         position: relative;
+      }
+
+      @keyframes move{
+         from{
+            transform: translatex(0);
+         }
+         to{
+            transform: translatex(25%);
+         }
+      }
+   }
+
+
+

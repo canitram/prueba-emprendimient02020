@@ -21,15 +21,54 @@
    height: auto;
    padding: 2rem 1.5rem;
    margin-top: 2rem;
-   &__item{
+   &__social{
+      font-family: $ubuntu;
       text-align: center;
-      &--image{
+      h2{
+         font-size: $large;
+         text-transform: uppercase;
+         font-weight: $font-bold;
+      }
+      .item--image{
          border-radius: 50%;
          border: 1px solid $sable;
          display: block;
          margin: 0 auto;
-         width: 18rem;
+         width: 70%;
          height: auto;
+      }
+      .item--icons{
+         font-size: $large;
+         text-align: center;
+         font-weight: $font-bold;
+         i{
+            margin: 0.4rem;
+         }
+      }
+      .item--text{
+         text-align: justify;
+         font-size: $medium;
+         line-height: 2rem;
+      }
+   }
+   &__more{
+      font-family: $poppins;
+      h2{
+         font-weight: $font-bold;
+         font-size: $large;
+         background-color: $charcoal;
+         width: 100%;
+         text-align: center;
+         color: $white;
+      }
+      .more--list{
+         font-size: $medium;
+         li{
+            list-style: circle;
+            a{
+               text-decoration: none;
+            }
+         }
       }
    }
 }

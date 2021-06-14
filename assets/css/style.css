@@ -335,7 +335,7 @@ html {
   color: #FFA500;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 48rem) {
   .navbar__logo img {
     padding: 0.5rem;
     width: 2.2rem;
@@ -346,6 +346,12 @@ html {
   }
   .navbar .toggle-collapse {
     display: none;
+  }
+}
+@media (min-width: 62rem) {
+  .navbar__menu {
+    display: flex;
+    color: #FFFFFF;
   }
 }
 .header__bg {
@@ -390,16 +396,87 @@ html {
   padding: 2rem 1.5rem;
   margin-top: 2rem;
 }
-.courses__item {
+.courses__social {
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
-.courses__item--image {
+.courses__social h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.courses__social .item--image {
   border-radius: 50%;
   border: 1px solid #060606;
   display: block;
   margin: 0 auto;
-  width: 18rem;
+  width: 70%;
   height: auto;
+}
+.courses__social .item--icons {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.courses__social .item--icons i {
+  margin: 0.4rem;
+}
+.courses__social .item--text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2rem;
+}
+.courses__more {
+  font-family: "Poppins", sans-serif;
+}
+.courses__more h2 {
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #2E1503;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.courses__more .more--list {
+  font-size: 16px;
+}
+.courses__more .more--list li {
+  list-style: circle;
+}
+.courses__more .more--list li a {
+  text-decoration: none;
+}
+
+.animation__svg {
+  width: 80%;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+.animation__svg .gear {
+  animation: 3s rotate linear infinite;
+  transform-origin: 79% 80%;
+  position: relative;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animation__svg .code {
+  animation: 1.5s move linear infinite alternate;
+  position: relative;
+}
+@keyframes move {
+  from {
+    transform: translatex(0);
+  }
+  to {
+    transform: translatex(25%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
